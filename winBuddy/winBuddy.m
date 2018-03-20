@@ -354,7 +354,7 @@ static void *isActive = &isActive;
 //    NSLog(@"wb_ Process Name: '%@' Process ID:'%d'", processName, processID);
 
     NSWindow *borderWin = objc_getAssociatedObject(self, borderKey);
-    [borderWin.contentView setBorderColor:self.isKeyWindow ? [NSColor redColor] : [NSColor blackColor]];
+    [borderWin.contentView setBorderColor:self.isKeyWindow ? [NSColor grayColor] : [NSColor darkgrayColor]];
     [borderWin setFrame:self.frame display:YES];
     if (![ReadPref(@"ShowBorder") boolValue])
         [borderWin.contentView setBorderColor:[NSColor clearColor]];
