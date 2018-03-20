@@ -1,3 +1,5 @@
+winBuddy to change window border colors
+
 # winBuddy
 
 ![preview](preview.png) 
@@ -33,3 +35,8 @@
 ### License:
 Pretty much the BSD license, just don't repackage it and call it your own please!    
 Also if you do make some changes, feel free to make a pull request and help make things more awesome!
+
+# Customization, building and installation
+In winbuddy.m, toward the bottom of the document, you'll see "[NSColor blackcolor]" and "[NSColor redcolor]".
+Those are what you wanna change. Figure out which colors you want the inactive, and active window borders to be ([predefined colors](https://developer.apple.com/documentation/appkit/nscolor/1527194-blackcolor?language=objc)).
+Also you can find "border width" somewhere in that document, change that to whatever you want. In xcode choose "build for running" and then find your new bundle in ~/Library/Developer/Xcode/DerivedData, and put that into your simbl folder.
