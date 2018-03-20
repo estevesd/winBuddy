@@ -1,4 +1,4 @@
-winBuddy to change window border colors
+[winBuddy fork](https://github.com/w0lfschild/winBuddy) to change window border colors
 
 # winBuddy
 
